@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-10">
+    <rb-shpping-list-add [item]="selectedListitem" (clead)="Onclead()"></rb-shpping-list-add>
+    <hr>
+    <ul class="list-group" style="list-style-type: none">
+
+     <li *ngFor="let item of items" > <a class="list-group-item" (click)="onSelectItem(item)" >{{item.name}}  ({{item.amount}}) </a><li>
+    </ul>
+  </div>
+
+</div>
